@@ -21,7 +21,7 @@ const FormClient: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:8080/api/clientes', formData);
+      const response = await axios.post('https://opine-back.onrender.com/api/clientes', formData);
       console.log('Dados enviados com sucesso:', response.data);
       router.push('/RatingService')
 
