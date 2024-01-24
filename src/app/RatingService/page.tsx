@@ -69,7 +69,7 @@ LoadingService();
     };
 
     try {
-      const response = await axios.post('http://localhost:8080/api/avaliacoes', avaliacaoData);
+      const response = await axios.post('https://opine-back.onrender.com/api/avaliacoes', avaliacaoData);
       console.log('Avaliação enviada com sucesso:', response.data);
       Swal.fire({
         title: 'Sucesso!',
