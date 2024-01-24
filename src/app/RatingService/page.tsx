@@ -32,7 +32,7 @@ const RatingService: React.FC = () => {
   useEffect (() => {
     const LoadingService = async () => {
       try {
-        const response = await axios.get('hhttps://opine-back.onrender.com//api/servicos');
+        const response = await axios.get('hhttps://opine-back.onrender.com/api/servicos');
         SetServices(response.data);
 
         
